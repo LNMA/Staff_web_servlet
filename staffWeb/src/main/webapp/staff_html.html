@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Staff Information</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style>
+	    @import url(staff_css.css);
+	</style>
+	<script src="staff_js.js"></script>
+    </head>
+    <body id="body">
+        <main>
+	    <form id="form" action="StaffInfo" method="post">
+		<input type="radio" name="operation" value="view" onclick="disable()"/>View &nbsp;
+		<input type="radio" name="operation" value="insert" onclick="enable()"/>Insert &nbsp;
+		<input type="radio" name="operation" value="update" onclick="disable()"/>Update &nbsp;
+		<input type="radio" name="operation" value="clear" onclick="disable()"/>Clear
+		<table id="table">
+		    <tr>
+			<td>
+			    <h4>ID: </h4>
+			</td>
+			<td>
+			    <input type="text" maxlength="9" size="20" name="id" id="1"/>
+			</td>
+		    </tr>
+		    <tr>
+			<td>
+			    <h4>Last Name: </h4>
+			</td>
+			<td>
+			    <input type="text" maxlength="15" size="20" name="lastName" id="2" />
+			</td>
+			<td>
+			    <h4>First Name: </h4>
+			</td>
+			<td>
+			    <input type="text" maxlength="15" size="20" name="firstName" id="3"/>
+			</td>
+			<td>
+			    <h4>MI : </h4>
+			</td>
+			<td>
+			    <input type="text" maxlength="1" size="1" name="mi" id="4"/>
+			</td>
+		    </tr>
+		    <tr>
+			<td>
+			    <h4>Address: </h4>
+			</td>
+			<td>
+			    <input type="text" maxlength="20" size="20" name="address" id="5"/>
+			</td>
+		    </tr>
+		    <tr>
+			<td>
+			    <h4>City: </h4>
+			</td>
+			<td>
+			    <input type="text" maxlength="20" size="20" name="city" id="6"/>
+			</td>
+			<td>
+			    <h4>State: </h4>
+			</td>
+			<td>
+			    <input type="text" maxlength="2" size="20" name="state" id="7"/>
+			</td>
+		    </tr>
+		    <tr>
+			<td>
+			    <h4>Telephone: </h4>
+			</td>
+			<td>
+			    <input type="number" maxlength="10" size="20" name="telephone" id="8"/>
+			</td>
+			<td>
+			    <h4>Email: </h4>
+			</td>
+			<td>
+			    <input type="text" maxlength="40" size="20" name="email" id="9" />
+			</td>
+		    </tr>
+		</table>
+		<input type="submit" name="sub" value="Submit" id="sub"/>
+	    </form>
+	</main>
+	<br>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+#table{
+    border-spacing: 10px;
+}
+
+#body{
+    background: linear-gradient(to right,#44b7a5,#ffdd77);
+}
+
+#form{
+    width: 640px;
+    height: 500px;
+    background-color: #018c8c;
+    margin: 50px 26%;
+    color: #bebe00;
+    text-align: center;
+
+}
+
+#sub{
+    color: darkgreen; 
+    background-color: #ffdd77;
+    font-size: 14px;
+    font-weight: bold;
+    width: 75px;
+    height: 40px;
+    border-radius: 10px 10px;
+}
